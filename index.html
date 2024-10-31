@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio de Bilal BEJJA</title>
+    <title>Portfolio de Bilal BEJJA - Java Fullstack Web Developer</title>
     <style>
         :root {
             --primary-color: #3498db;
@@ -127,28 +127,50 @@
         .quote {
             margin-bottom: 20px;
         }
-        .contact-form {
-            display: grid;
+        .contact-section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .contact-section h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+        .contact-card {
+            text-align: center;
+        }
+        .contact-buttons {
+            display: flex;
+            justify-content: center;
             gap: 20px;
+            margin-top: 20px;
         }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-        }
-        .contact-form button {
-            background-color: var(--primary-color);
-            color: #fff;
-            border: none;
+        .whatsapp-button, .email-button {
+            display: flex;
+            align-items: center;
             padding: 10px 20px;
-            border-radius: 4px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            border-radius: 30px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
-        .contact-form button:hover {
-            background-color: #2980b9;
+        .whatsapp-button {
+            background-color: #25D366;
+        }
+        .email-button {
+            background-color: #D44638;
+        }
+        .whatsapp-button:hover, .email-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        .whatsapp-icon, .email-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
         }
         @media (max-width: 768px) {
             .container {
@@ -172,11 +194,11 @@
     <header>
         <div id="particles-js"></div>
         <h1>Bilal BEJJA</h1>
-        <p class="subtitle">Desarrollador Web</p>
+        <p class="subtitle">Java Fullstack Web Developer</p>
         <div class="social-links">
-            <a href="#" target="_blank">GitHub</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="mailto:email@example.com">Email</a>
+            <a href="https://github.com/bilalbejja" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/bilalbejja/" target="_blank">LinkedIn</a>
+            <a href="mailto:bilalbejja2016@gmail.com">Email</a>
         </div>
     </header>
 
@@ -184,9 +206,11 @@
         <section class="card">
             <h2>Sobre mí</h2>
             <p>
-                Soy un desarrollador web apasionado con experiencia en proyectos de gran escala. 
-                Actualmente trabajo en Capgemini, donde he tenido la oportunidad de participar 
-                en proyectos importantes y asumir responsabilidades crecientes.
+                Soy un Java Fullstack Web Developer con más de 3 años de experiencia en proyectos de gran escala. 
+                Mi experiencia abarca desde la instalación de entornos y el manejo de incidencias hasta el despliegue 
+                en Jenkins. Tengo amplia experiencia con versiones antiguas de Java, incluyendo Java 1.6. 
+                Actualmente, soy responsable de algunas aplicaciones y me encargo de supervisar a desarrolladores junior. 
+                Me apasiona el trabajo en equipo y disfruto compartiendo mis conocimientos con otros.
             </p>
         </section>
 
@@ -194,36 +218,32 @@
             <h2>Experiencia Laboral</h2>
             <div class="card experience-item">
                 <h3>Capgemini</h3>
-                <p class="experience-date">2021 - Presente</p>
+                <p class="experience-date">2020 - Presente</p>
                 <ul>
-                    <li>Responsable de una aplicación principal</li>
-                    <li>Realización de migraciones en múltiples proyectos</li>
+                    <li>Desarrollo fullstack para proyectos de la CNAM y CNAF francesas</li>
+                    <li>Responsable de aplicaciones y supervisión de desarrolladores junior</li>
+                    <li>Participación en todo el ciclo de desarrollo, desde la configuración de entornos hasta el despliegue</li>
                     <li>Manejo de incidencias y soporte técnico</li>
-                    <li>Trabajo en proyectos franceses como CNAM (referencial médico) y CNAF (portal agent flux sortants)</li>
+                    <li>Implementación de soluciones utilizando Java (incluyendo versiones antiguas como Java 1.6)</li>
+                    <li>Despliegue de aplicaciones utilizando Jenkins</li>
                 </ul>
-            </div>
-        </section>
-
-        <section>
-            <h2>Educación</h2>
-            <div class="card">
-                <h3>Formación Profesional en Desarrollo de Aplicaciones Web</h3>
-                <p>Finalizado en 2021</p>
             </div>
         </section>
 
         <section>
             <h2>Proyectos Destacados</h2>
             <div class="card project-item">
-                <h3>CNAM - Referencial Médico</h3>
+                <h3>CNAM - Sistema de Referencia Médica</h3>
                 <p>
-                    Participación en el desarrollo y mantenimiento del sistema de referencia médica para la CNAM francesa.
+                    Participación en el desarrollo y mantenimiento del sistema de referencia médica para la CNAM francesa durante 2 años.
+                    Implementación de funcionalidades clave utilizando Java y tecnologías web.
                 </p>
             </div>
             <div class="card project-item">
-                <h3>CNAF - Portal Agent Flux Sortants</h3>
+                <h3>CNAF - Portal de Agentes</h3>
                 <p>
-                    Desarrollo de funcionalidades para el portal de agentes de flujos salientes de la CNAF.
+                    Desarrollo de funcionalidades para el portal de agentes de la CNAF francesa durante 1 año.
+                    Implementación de soluciones robustas utilizando Java y frameworks web modernos.
                 </p>
             </div>
         </section>
@@ -231,33 +251,43 @@
         <section>
             <h2>Habilidades</h2>
             <div class="card skills">
+                <span class="skill">Java</span>
+                <span class="skill">Java EE</span>
+                <span class="skill">Spring Framework</span>
+                <span class="skill">Hibernate</span>
+                <span class="skill">SQL</span>
                 <span class="skill">HTML5</span>
                 <span class="skill">CSS3</span>
                 <span class="skill">JavaScript</span>
-                <span class="skill">React</span>
-                <span class="skill">Node.js</span>
                 <span class="skill">Git</span>
-                <span class="skill">Responsive Design</span>
+                <span class="skill">Jenkins</span>
+                <span class="skill">Maven</span>
+                <span class="skill">JUnit</span>
                 <span class="skill">RESTful APIs</span>
             </div>
         </section>
 
         <section class="quotes">
             <h2>Mis Frases Favoritas</h2>
-            <div class="quote">"El código es como el humor. Cuando tienes que explicarlo, es malo." - Cory House</div>
+            <div class="quote">"El trabajo en equipo divide el trabajo y multiplica el éxito."</div>
             <div class="quote">"La simplicidad es la sofisticación definitiva." - Leonardo da Vinci</div>
-            <div class="quote">"Mide dos veces, corta una vez." - Proverbio de carpintería aplicado a la programación</div>
+            <div class="quote">"Mide dos veces, corta una vez." - Proverbio aplicado a la programación</div>
         </section>
 
-        <section>
+        <section class="contact-section">
             <h2>Contacto</h2>
-            <div class="card">
-                <form class="contact-form">
-                    <input type="text" placeholder="Nombre" required>
-                    <input type="email" placeholder="Email" required>
-                    <textarea placeholder="Mensaje" rows="5" required></textarea>
-                    <button type="submit">Enviar Mensaje</button>
-                </form>
+            <div class="card contact-card">
+                <p>¿Tienes alguna pregunta o propuesta? ¡Contáctame directamente!</p>
+                <div class="contact-buttons">
+                    <a href="https://wa.me/34632332217" target="_blank" class="whatsapp-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Icon" class="whatsapp-icon">
+                        Contactar por WhatsApp
+                    </a>
+                    <a href="mailto:bilalbejja2016@gmail.com" class="email-button">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Gmail_icon_%282020%29.svg" alt="Email Icon" class="email-icon">
+                        Enviar Email
+                    </a>
+                </div>
             </div>
         </section>
     </div>
