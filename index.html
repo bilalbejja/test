@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Bilal BEJJA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f0f0f0, #e0e0e0);
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 40px 0;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+            color: #2c3e50;
+        }
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+        .subtitle {
+            font-size: 1.2em;
+            color: #7f8c8d;
+        }
+        .social-links {
+            margin-top: 20px;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #3498db;
+            text-decoration: none;
+        }
+        .card {
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .experience-item, .project-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3, .project-item h3 {
+            margin: 0;
+            color: #2c3e50;
+        }
+        .experience-date {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bilal BEJJA</h1>
+            <p class="subtitle">Desarrollador Web</p>
+            <div class="social-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">LinkedIn</a>
+                <a href="mailto:email@example.com">Email</a>
+            </div>
+        </header>
+
+        <section class="card">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy un desarrollador web apasionado con experiencia en proyectos de gran escala. 
+                Actualmente trabajo en Capgemini, donde he tenido la oportunidad de participar 
+                en proyectos importantes y asumir responsabilidades crecientes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Experiencia Laboral</h2>
+            <div class="card experience-item">
+                <h3>Capgemini</h3>
+                <p class="experience-date">2021 - Presente</p>
+                <ul>
+                    <li>Responsable de una aplicación principal</li>
+                    <li>Realización de migraciones en múltiples proyectos</li>
+                    <li>Manejo de incidencias y soporte técnico</li>
+                    <li>Trabajo en proyectos franceses como CNAM (referencial médico) y CNAF (portal agent flux sortants)</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+            <div class="card">
+                <h3>Formación Profesional en Desarrollo de Aplicaciones Web</h3>
+                <p>Finalizado en 2021</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Proyectos Destacados</h2>
+            <div class="card project-item">
+                <h3>CNAM - Referencial Médico</h3>
+                <p>
+                    Participación en el desarrollo y mantenimiento del sistema de referencia médica para la CNAM francesa.
+                </p>
+            </div>
+            <div class="card project-item">
+                <h3>CNAF - Portal Agent Flux Sortants</h3>
+                <p>
+                    Desarrollo de funcionalidades para el portal de agentes de flujos salientes de la CNAF.
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
