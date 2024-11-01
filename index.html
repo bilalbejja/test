@@ -147,8 +147,11 @@
             justify-content: center;
             gap: 20px;
             margin-top: 20px;
+            flex-wrap: wrap; /* Update 1 */
         }
-        .whatsapp-button, .email-button {
+        .whatsapp-button, 
+        .email-button,
+        .coffee-button { /* Update 3 */
             display: flex;
             align-items: center;
             padding: 10px 20px;
@@ -157,6 +160,8 @@
             color: white;
             font-weight: bold;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            min-width: 200px;
+            justify-content: center;
         }
         .whatsapp-button {
             background-color: #25D366;
@@ -174,23 +179,15 @@
             margin-right: 10px;
         }
         .coffee-button {
-            display: flex;
-            align-items: center;
-            padding: 10px 20px;
-            border-radius: 30px;
-            text-decoration: none;
-            color: #000000;
-            font-weight: bold;
             background-color: #FFDD00;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
         .coffee-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 4px 8px rgba(0,0,0,0.2);
         }
         .coffee-icon {
-            width: 24px;
-            height: 24px;
+            width: 30px;
+            height: 30px;
             margin-right: 10px;
         }
         @media (max-width: 768px) {
@@ -199,6 +196,16 @@
             }
             h1 {
                 font-size: 2em;
+            }
+            .contact-buttons { /* Update 2 */
+                flex-direction: column;
+                gap: 10px;
+            }
+            .whatsapp-button, 
+            .email-button,
+            .coffee-button {
+                width: 100%;
+                justify-content: center;
             }
         }
         #particles-js {
